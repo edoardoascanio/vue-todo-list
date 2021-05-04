@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue TODO list</title>
+		<meta charset="UTF-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<div id="main">
+	         <div class="logo">
+				<img src="img/Logo.png" alt="logo-boolean">
+				<span><h1>boolean</h1></span> 
+			 </div>
+			<input v-model="newTodoTitle" class="todo-input" type="text" @keyup.enter="addTodo" placeholder="Nuovo todo">
+			<input type="button" class="add-btn"value="Aggiungi" @click="addTodo">
+			<br/>
+			<br/>
+			<input v-model="query" class="search" type="text" placeholder="Search">
+			<div class="todos">
+				<ul>
+					<li v-for="(todo, index) in searchTodos" :key="index" :class="{ done : todo.done }">{{ todo.title }}
+						<button @click="toggleTodo(todo)"> {{ todo.done ? 'Undo' : 'Done' }}</button>
+					</li>
+					<hr>
+				</ul>
+			</div>
+			
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

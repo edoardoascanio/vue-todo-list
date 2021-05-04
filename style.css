@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;    
+}
+
+.done {
+	color: red;
+}
+
+#main{
+	width: 50%;
+	margin: auto;
+}
+
+.logo{
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-left: 200px;
+}
+
+.logo img{
+	display: inline-block;
+	width: 10%;
+	vertical-align: middle;
+}
+
+h1{
+    display: inline-block;
+    font-size: 50px;
+    vertical-align: middle;  
+	margin-left: 20px; 
+	color: #00072b;
+}
+
+.todo-input ,.search{
+	width: 50%;
+	margin-left: 120px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.add-btn{
+	padding:10px 15px;
+	border-radius: 10px;
+	color: grey;
+	margin-left: 10px;
+}
+
+.todos{
+	width: 100%;
+	background-color: #e9ebf7;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding: 50px;
+}
+
+ul li{
+	list-style: none;
+	margin: 20px;
+	color:  #00072b;
+}
+
+li button {
+	float:right;
+	border:none;
+	color:#00072b;
+}
